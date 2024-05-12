@@ -22,16 +22,21 @@
   .burger__menu > div {
     width: 100%;
     background-color: var(--main-color);
+    margin: 3.9rem 0;
+  }
+  .burger__menu > div > nav {
+    text-align: center;
   }
 
   .burger__menu > div > nav > ul {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3.2rem;
-    margin: 3.9rem 0;
+    margin: 3.8rem 0;
   }
+
   .burger__menu > div > nav > ul > li > a {
     text-decoration: none;
     font-family: Barlow;
@@ -41,6 +46,15 @@
     letter-spacing: -0.1428571492433548px;
     text-align: left;
     color: var(--seconderyText-color);
+  }
+
+  .burger__menu > div > nav > ul > li:last-child > a {
+    background-color: var(--burgerMenu-color);
+    padding: 1.6rem 3.1rem;
+    display: inline-block;
+    /* margin-bottom: 3.9rem; */
+    color: var(--grey-color);
+    border-radius: 2.8rem;
   }
 
   .header__container > div > nav {

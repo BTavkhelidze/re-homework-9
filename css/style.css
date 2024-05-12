@@ -6,6 +6,8 @@
   --grey-color: #24303e;
   --seconderyText-color: #808397;
 
+  --burgerMenu-color: #fbd600;
+
   --footer-color: #90d4c6;
   --footerText-color: #2c7566;
   --footerSecondText-color: #458d7e;
@@ -64,6 +66,19 @@
   line-height: 2.5rem;
   letter-spacing: -0.012857143580913544rem;
   text-align: left;
+}
+
+.header__container > div > nav > ul > li:last-child > a {
+  background-color: var(--main-color);
+  color: var(--grey-color);
+  padding: 1.6rem 3.1rem;
+  border-radius: 2.8rem;
+  transition: background-color 0.5s ease;
+}
+
+.header__container > div > nav > ul > li:last-child > a:hover {
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, 28%);
 }
 
 .header__container > div:last-child {
@@ -426,4 +441,8 @@
   margin-top: 8.8rem;
   margin-bottom: 7.2rem;
   justify-content: center;
+}
+
+.about-nav > ul > li > a:hover {
+  color: var(--main-color);
 }
